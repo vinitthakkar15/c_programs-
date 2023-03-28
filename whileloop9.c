@@ -1,0 +1,30 @@
+#include <stdio.h>
+
+int main() {
+
+  int n, reverse = 0, remainder,y;
+
+  printf("Enter an integer: ");
+  scanf("%d", &n);
+    y=n;
+  while (n != 0) {
+    remainder = n % 10;
+    reverse = reverse * 10 + remainder;
+    n /= 10;
+  }
+
+  printf("No = %d Reversed number = %d",y, reverse);
+
+  if(y==reverse)
+  {
+      printf("factorial number");
+  }
+
+  else
+  {
+    printf("it is not factorial number");
+  }
+  
+
+  return 0;
+}
